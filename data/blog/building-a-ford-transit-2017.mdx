@@ -1,0 +1,187 @@
+---
+title: Building a Ford Transit 2017
+date: '2022-10-07'
+tags: ['van', 'vanlife']
+draft: false
+summary: In October 2021, after going on trips and seeing vans everywhere, I decided I wanted to experience that and have my own van. So I set out to convert a van. This is my high level overview of what I used in my van to make my van come to life.
+images: []
+layout: PostSimple
+canonicalUrl: /blog/van
+---
+
+<details>
+  <summary> Table of Contents </summary>
+  <p>
+    <TOCInline toc={props.toc} exclude="Table Of Contents" toHeading={3} />
+  </p>
+</details>
+___
+
+![Appa](/static/van2.jpg)
+
+In October of 2021, I set out to buy a van and do a conversion after seeing so many people online driving around and doing the van life. Except my end goal was more of a van weekender, than a true van life. I could never live in it full time, but having a mobile home sounded fantastic for when I did want to get out of the house.
+
+So after scouring for nearly a year I found my van on Facebook Marketplace. I found a 2017 Ford Transit Ecoboost with 109,000 miles on it. It had already been stripped and had 2 new windows installed, brand new cats installed, 100k maintenance inspection + repairs, and more. I ended up bartering from &#0036;30,500 down to &#0036;28,000. Now, some of you may think this is quite an overpriced van, but given COVID-19 and inflation running rampant, I figure this was actually a decent price.
+
+Now came the real challenge. Actually making my dream become a reality. I had researched a bunch on how to build a van, but every van is different and everyone has different requirements, so it made it a bit challenging. There are a quite a bit of resources to look at, and many of them **suck**. There is so much misinformation, terrible advice, and just bad guidelines over all. I cannot recommend [Faroutride.com](faroutride.com) and [Mosermakes](https://www.mosermakes.com/). They have quite a bit of fantastic details on at least how to get started and options to choose from. There is no **best** option, but they highlight everything you should know before going into a certain part.
+
+Below I am going to address each individual aspect of the van, and the parts I went with. As stated before there is no right or wrong decision, just a decision.
+
+## Electrical
+
+---
+
+**Disclaimer: I am not a certified electrician. Take everything you read lightly.**
+
+Electrical work was my biggest challenge. As a Software Engineer, I am pretty technically sound, and understand more than the average. I was still daunted by the task until I jumped in, then I realized how easy it truly was. Red goes to red and black goes to black.
+To start with electrical you need to know how much electricity you are going to need and how much you will average per day. I had no idea how to calculate this, but I did all my calculations like this **Amp-hours = watt-hours / volts**. I only run both 12v and 120v in my van. So you can sort of calculate the amp hours it will use.
+
+### Batteries - [BattleBorn 100ah LifePo4](https://battlebornbatteries.com/product/12v-lifepo4-deep-cycle-battery/)
+
+I went with Battleborn, which are very pricey. The cost about &#0036;1,000 per battery. Luckily I found someone local that was building a Skoolie, and had 6 extra batteries brand new in packaging. I guess they went a little crazy and had too many. Long story short, I was able to buy them at &#0036;450 a piece. I ended up buying 3, for a total of 300aH. Why did I go with Battleborn over cheaper brands? There are a few reasons:
+
+1.  The warranty of 10 years gave me peace of mind that if anything went wrong, I could get a new battery. Now this does not cover if I did some damages to it, but if it was truly the battery going bad, that I was covered
+
+    > In the unlikely event you are having an issue with one of our
+    > batteries, your Battle Born Battery has a 10-year manufacturer’s
+    > defect warranty from the date of purchase
+
+2.  Reviews and other's that have taken the time to deep dive into batteries, I am looking at you [Will Prowse](https://www.youtube.com/watch?v=G5E30u-66VI&t=563s). After watching this I felt safe having these be underneathe me while I sleep.
+
+3.  I wanted LiFePO4 batteries over AGM for weight, efficiency and life span.
+
+### Inverter - [Victron Energy Inverter Phoenix 12V 1200VA 120V](https://www.amazon.com/Victron-Energy-Inverter-Phoenix-1200W/dp/B07P7RNRJ5/ref=sr_1_6?keywords=Victron%20inverter%201000w&qid=1664912444&qu=eyJxc2MiOiIxLjAxIiwicXNhIjoiMC43MiIsInFzcCI6IjAuMDAifQ==&sr=8-6)
+
+I went with a 1000w inverter as my electrical appliances I would be using did not involve anything larger than this. In my initial thoughts I though it would just be running my laptop and my phone, but then it moved into charging my drones, camera batteries, trying to power an electrical kettle ~1200w. So as you can see things added up fast and as I went out for a day I would come back and try charging everything at the end of the day. It could handle it all minus trying to use a kettle, or larger application. My solution to this was to just use propane for everything that was larger, which I will address later in the post.
+I would expect a 1000w inverter to work for most people that are in vans, but if you are going to rely on large applications like a microwave, induction cooktop, etc then a 2000w+ may be what you need. I was only building a week/weekend warrior so 1000w was perfect for all my needs.
+
+### Solar Controller: [Victron Energy BlueSolar MPPT 100/30 Charge Controller](https://www.amazon.com/Victron-Energy-BlueSolar-Charge-Controller/dp/B076N5PTBN/ref=sr_1_1_sspa?keywords=Victron+solar+controller&qid=1664913490&qu=eyJxc2MiOiI0LjExIiwicXNhIjoiMy4xNCIsInFzcCI6IjIuNjQifQ%3D%3D&sr=8-1-spons&psc=1&smid=ACEM1DTDODKXX)
+
+I went with the Victron Solar Controller as to stay in the victron ecosystem. I love the bluetooth app to monitor the wattage being generated by the solar panels, its a good way to monitor the performance of the panels. Other than that nothing much else here that I comment on for performance or build quality, other than it was up to par for my standards.
+
+### Solar Panels: [Renogy 100w Panels](https://www.amazon.com/Renogy-Monocrystalline-Solar-Compact-Design/dp/B07GF5JY35/ref=sr_1_3?keywords=renogy+100w+panels&qid=1664913671&qu=eyJxc2MiOiIwLjk1IiwicXNhIjoiMC4wMCIsInFzcCI6IjAuMDAifQ%3D%3D&sr=8-3)
+
+These were the used by many across the van life group and just saw forums and lots of reddit posts that this is what they used. They work just fine, and keep my battery bank fully charged on sunny days. I live in California, where the sun always shines, so I hardly lose power as I use it. If I could change these, I may just get larger 200w panels and reduce down to 2 panels instead of 3 on my roof.
+
+### Fuse Box - [Blue Sea Safety Hub](https://www.amazon.com/Blue-Sea-Systems-SafetyHub-Block/dp/B0053BTSEK/ref=sr_1_2?crid=UNCAGXYZCB05&keywords=blue+sea+safety+hub&qid=1664913848&qu=eyJxc2MiOiIyLjQyIiwicXNhIjoiMS42NyIsInFzcCI6IjEuMjEifQ%3D%3D&sprefix=blue+sea+safety+hu%2Caps%2C182&sr=8-2)
+
+I chose this box from a recommendation by [Mosermakes](https://www.mosermakes.com/). It really helped reduce the amount of moving parts and bus bars by allowing everything to be in one central location. It has 2 bus bars, a bunch of fuse slots and a pretty decent layout. The only gripe was the negative bus bar screws are pretty nested together, so its a tight fit if you have a lot of wires coming into it.
+
+### Isolator - [Victron Energy Orion-Tr Smart DC-DC Charger, Isolated](https://www.amazon.com/Orion-Tr-12-30A-Isolated-Charger-Booster/dp/B07ZKG396Y/ref=sr_1_1?crid=3NY5BPJQCZPDQ&keywords=Victron+Energy+Orion-Tr+Smart+12%2F12-Volt+30+amp+360-Watt&qid=1664914259&s=industrial&sprefix=victron+energy+orion-tr+smart+12%2F12-volt+30+amp+360-watt+%2Cindustrial%2C180&sr=1-1)
+
+I chose this isolator to stay in the victron ecosystem, as well as having the bluetooth functionality to make sure my vehicle was charging my batteries as it was driving. This isolator is super nice because you can control how it charges, while driving, while idle, all the time (be careful), etc.
+
+## Plumbing
+
+---
+
+Well I really had minimal plumbing. As I **DO NOT** have a bathroom, and only a kitchen sink. I found the bathroom solution to be pretty trivial. If I am outdoors, I use the earth, and most of the time I am in a campground or where a port-o-potty might be, so I can always use that.
+
+### Water Pump - [Shurflo 2088-554-144 Fresh Water Pump](https://www.amazon.com/gp/product/B00C1M6B1C/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1)
+
+     -  [Silencing Kit](https://www.amazon.com/gp/product/B000WN5F96/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1) - Designed to reduce noise and vibration in all plumbing systems
+     - [Acculumator](https://www.amazon.com/gp/product/B000N9VF6Q/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1) - Smooths water faucet pulses
+     -  [Strainer](https://www.amazon.com/gp/product/B000V2W0GE/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1) - Clean, clear economical strainers eliminate unnecessary repairs by keeping debris and other particles out of the pump
+
+
+No comments here, just a water pump & accessories that is standard to RV's & Vanlife. I used pex tubing, and a quick connect to the water jugs.
+
+### Water Jugs - [Reliance Aqua-Tainer Water Storage Container 7 Gallon](https://www.walmart.com/ip/Reliance-Aqua-Tainer-Water-Storage-Container-7-Gallon/872426)
+
+These jugs absolutely rock. I have 3 of them. 2 for fresh water. 1 for grey water. I have seen builds with static 20+ gallon tanks in the rear of vans, but I've always felt like it took up quite some space, and then theres potential areas of fault from the back to the front. So I simplified the design, and made it all nested in one location, under the sink.
+
+- Pros:
+  - Easy to manage.
+  - Easy to fill up anywhere, in a store, hose, or fountain.
+  - Easy to dump and rinse grey water.
+  - Can remove water source completely to work on and do maintenance.
+- Cons:
+  - Smaller water amount. Only 14 gallons vs large quantities.
+
+## Insulation
+
+---
+
+### Wall Insulation - [Thinsulate](https://www.vanlifeoutfitters.com/store/3m-thinsulate-sm600l-insulation/)
+
+I chose thinsulate over others, because it was well reviewed, it was easy to work with, and was hassle free. You can use basic kitchen scissors to cut the insulation as needed, and it sticks so well with just 3M90 Spray Adhesive. I was able to insulate my whole van in less than 2 hours. From personal experiences, my van has been easy to sleep in, in sub 32&deg;F. I used a normal blanket from amazon to keep warm through the night. I have also slept in the van in 102&deg;F in central california during lake trips with no AC. The heat is a bit more grueling but fine with the van pulling in air at night and using a fan in the van as well.
+
+### Floor Insulation - [Minicell](https://diyvan.com/collections/minicell)
+
+I used minicell for the floor insulation. It lays smooth, it sticks with 3M adhesive, and helps get a nice even floor when leveling it all out. Both in extreme hit 100&deg;F+ and 28-32&deg;F, my floor has been fine to walk around barefoot, I actually have never noticed a floor temp difference in my Van, this is probably subjective.
+
+## Tires & Wheels
+
+---
+
+- ### Wheels - [Black Rhino Arsenal](https://www.tirerack.com/wheels/WheelCloseUpServlet?target=runWheelSearch&initialPartNumber=1680ARS385160TMB&wheelMake=Black+Rhino&wheelModel=Arsenal&wheelFinish=Textured+Matte+Black&showRear=no&autoMake=Ford&autoModel=Transit+T250+Van&autoYear=2017&autoModClar=)
+- ### Tires - [BF Goodrich KO2](https://www.tirerack.com/tires/tires.jsp?gclid=EAIaIQobChMI_N_D-NTJ-gIVjs-GCh3-xQYwEAYYASABEgL6_fD_BwE&tireMake=BFGoodrich&tireModel=All-Terrain+T%2FA+KO2&partnum=465SR7KO2RWL&GCID=C13674x012-tire&KEYWORD=tires.jsp_BFGoodrich_All-Terrain+T%2FA+KO2_Tire&code=yes&ef_id=EAIaIQobChMI_N_D-NTJ-gIVjs-GCh3-xQYwEAYYASABEgL6_fD_BwE:G:s&s_kwcid=AL!3756!3!537118804928!!!u!293946777986!&gclsrc=aw.ds)
+
+Just to bundle both of these topics together, these wheels and tires are a necessity I didn't know I needed. Being in a RWD Van, these tires can get through almost anything that is not deep mud or sand, but that is a given. I have taken this van 6 hours south into Baja Mexico, and was able to keep up with all sorts of trucks, jeeps, and more. I never felt unsafe having these on my vehicle and they do perform up to my expectations. I think if I were to get Max Trakk Pads, I would feel a bit more comfy in more weather situations. Just to note, I have yet to take the van into snow for obvious reasons, but I hear lots of success stories from weighted vans doing just fine with these tires.
+
+## Interior
+
+---
+
+I may get some flack for not building my own interior from scratch. I did this for a few reasons. My van was a 2022 COVID-19, inflation build. Everything was so expensive. 3/4 plywood sheets were about &#0036;80 per sheet. So instead of spending &#0036;500 on lumber, then more money on hardware, then more money of finishes, plus the time, I figure let me just spend &#0036;300 and have it all ready to go.
+Below I am going to list some pros and cons to Ikea parts.
+
+**Pro's:**
+
+- Budget-Friendly
+- Labor-Friendly
+- Easy to install and remove if necessary.
+
+**Con's:**
+
+- Lifespan & Durability (1 year strong and no signs of deterioration yet)
+- Cheaper materials (particle board vs plywood)
+- Not water friendly
+
+Take what you will from these, but from my experience it has been great.
+
+- ### Bed Mounts - [Skorva](https://www.ikea.com/us/en/p/skorva-center-support-beam-galvanized-90124534/)
+
+The mounts we used are a life saver. They extend to different lengths, so depending on your bed and van length, they should fit all.
+
+**LPT:** You cannot buy the mounting hardware for these, so you can just call customer service to get the mounting hardware they use.
+
+- ### Bed Slats - [LUROY](https://www.ikea.com/us/en/p/luroey-slatted-bed-base-00160215/)
+
+A well ventilated mattress is necessary.
+
+- ### Kitchen - [KNOXHULT](https://www.ikea.com/us/en/p/knoxhult-base-cabinet-with-doors-and-drawer-white-60372262/)
+
+Amazing little kitchen that I mounted a slab of wood to, to create a full kitchen. It has easy storage and the perfect size to fit 2-4 of the above linked water jugs in.
+
+- ### Cabinets - [BESTA](https://www.ikea.com/us/en/p/besta-wall-mounted-cabinet-combination-white-lappviken-white-s69431865/)
+
+These cabinets are similar to the ones we bought. I think they were around $24 a piece at the time. If I find the ones we used I will correct this section. I have to rig these up with a 1/2 in plywood base on the backside to mount to the studs. I put about a 15&deg; angle on these to make them lineup flush against the wall.
+
+## Exterior
+
+---
+
+- ### Fan - [Maxxair 5100k](https://www.amazon.com/Maxxair-00-05100K-MaxxFan-Ventillation-Opening/dp/B002OWAIB8/ref=sr_1_1?keywords=max+air+5100k&qid=1665171969&qu=eyJxc2MiOiIwLjY0IiwicXNhIjoiMC43MiIsInFzcCI6IjAuMDAifQ%3D%3D&sr=8-1&ufe=app_do%3Aamzn1.fos.c3015c4a-46bb-44b9-81a4-dc28e6d374b3)
+
+I went with the non remote fan, as it is placed right over the bed. It was convenient enough for us to just reach up and push the fan on/off when needed.
+
+- ### Roof Rack - [FVC Low Pro Roof Rack](https://flatlinevanco.com/collections/all-product/products/low-pro-roof-rack-transit-148-high-roof)
+
+My build required a roof rack to mount solar panels. Yes, there are other ways to do it, but I felt secure in having a dedicated rack to mount roof items too. The FVC rack was a super simple installation, just a few screws and bolts to mount it down
+
+- ### Ladder - [FVC Side Ladder](https://flatlinevanco.com/products/transit-side-ladder-high-roof?variant=31404496715863)
+
+The ladder is just an add-on that really isnt needed, but its nice being able to climb up and look at views from the roof, and work on the roof accessories when needed.
+
+## Accessories
+
+---
+
+- ### Swivel - [Scopema Swivel Seat](https://theswivelshop.com/collections/frontpage/products/transit-scopema-seat-swivels)
+
+I wasn't sure on the initial implmentation if I needed a swivel seat. Having this has turned the van into a hangout spot. I can easily fit 3-4 people in the van comfortably. It makes the van feel like it has a living space, and overall happy with the results from having this in the van.
+
+- ### Headunit - [Alpine iLX-F509](https://www.crutchfield.com/S-VUBSado5ExM/p_500ILXF509/Alpine-Halo9-iLX-F509.html?XVINQ=GM0&XVVer=13F9&awcr=625419662313&awdv=c&awnw=g&awug=9031300&awkw=kwd-1654780367499&awmt=p&awat=&gclid=EAIaIQobChMIuqe1ptrJ-gIV7BXUAR37uwmIEAAYASAAEgJaJvD_BwE)
+
+This was another non-essential add-on to the van. I knew I wanted an wireless Apple Carplay unit for long road trips, and this satisfied the condition. It also doubles up as a screen for shows, movies, and watching sports on the go. I connected a firestick to the HDMI port of the screen and tether my phone so I can watch anything I want.
