@@ -1,16 +1,15 @@
 ---
-name: Tails Azimuth
+name: Nicholas Nguyen
 avatar: /static/images/avatar.png
-occupation: Professor of Atmospheric Science
-company: Stanford University
-email: address@yoursite.com
-twitter: https://twitter.com/Twitter
-linkedin: https://www.linkedin.com
-github: https://github.com
+occupation: Software Engineer & Tinkerer
+email: nicholasnguyen06@gmail.com
+linkedin: https://www.linkedin.com/in/nicholasnguyen06
 ---
 
-Tails Azimuth is a professor of atmospheric sciences at the Stanford AI Lab. His research interests includes complexity modelling of tailwinds, headwinds and crosswinds.
+Hey everyone, Nick here. Just wanted to share a little about myself. I am a 28 year old dude living in San Diego.
 
-He leads the clean energy group which develops 3D air pollution-climate models, writes differential equation solvers, and manufactures titanium plated air ballons. In his free time he bakes raspberry pi.
+I have always had people ask me about projects I am working on, what I am doing, and I've always just gave short brief answers when they wanted more. So I decided to start this blog in hopes to inspire others, and show others what I know. I thought it would be a great way for me to share what I am doing with others, as well as make a record of everything I do in life.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+So Cheers! You can find my contact information below and reach out if you have questions!
+
+-NN
