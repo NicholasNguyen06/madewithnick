@@ -1,4 +1,5 @@
 const projectsData = [
+  /*
   {
     title: 'The Van',
     description: `What if you could look up any information in the world? Webpages, images, videos
@@ -15,6 +16,7 @@ const projectsData = [
     imgSrc: '/static/images/time-machine.jpg',
     href: '/blog/building-a-home-gym',
   },
+  */
 ]
 
 export default projectsData
