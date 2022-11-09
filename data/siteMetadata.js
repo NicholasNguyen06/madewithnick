@@ -10,10 +10,9 @@ const siteMetadata = {
   siteLogo: '/static/images/logo-1.png',
   image: '/static/images/avatar.png',
   socialBanner: '/static/images/twitter-card.png',
-  email: 'address@yoursite.com',
+  email: 'NicholasNguyen06@gmail.com',
   github: 'https://github.com',
   facebook: 'https://facebook.com',
-  youtube: 'https://www.youtube.com/channel/UCdrSXKSC43MKC5nsvq7qi-A/videos',
   linkedin: 'https://www.linkedin.com/in/nicholasnguyen06',
   instagram: 'https://www.instagram.com/nicholasnguyen06',
   locale: 'en-US',
@@ -30,7 +29,7 @@ const siteMetadata = {
   newsletter: {
     // supports mailchimp, buttondown, convertkit, klaviyo, revue, emailoctopus
     // Please add your .env file and modify it according to your selection
-    provider: 'buttondown',
+    provider: 'mailchimp',
   },
   comment: {
     // If you want to use a commenting system other than giscus you have to add it to the
